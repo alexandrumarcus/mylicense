@@ -1,16 +1,14 @@
-/**
- * License Application
- */
-const express = require('express')
-const application = express()
+const express = require('express');
+const app = express();
+const path = require('path');
 const port = process.env.port || 3000;
 
-application.use(express.static('./src'))
+app.use(express.static('./src'))
 
-application.get('/', function (rq, rs) {
-  rs.sendfile('./src/index.html')
+app.get('/', function (rq, rs) {
+  rs.sendFile(path.join(__dirname + 'src/index.html'));
 })
 
-application.listen(port, function(){
+app.listen(port, function(){
   console.log('Server is running..');
 });
