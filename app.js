@@ -2,8 +2,8 @@
  * License Application
  */
 
-let express = require('express')
-let application = express()
+const express = require('express')
+const application = express()
 const port = process.env.port || 5000;
 
 application.use(express.static('./src'))
