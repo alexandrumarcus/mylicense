@@ -13,10 +13,9 @@
     "node": "12.14.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "express": "^4.17.1",
-    "gulp": "^4.0.2",
-    "gulp-nodemon": "^2.5.0"
+    "express": "^4.17.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
